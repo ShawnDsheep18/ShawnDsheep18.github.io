@@ -1,0 +1,241 @@
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(lake.webp);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.mySlides {
+  display: none
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 200px) {
+
+  .prev,
+  .next,
+  .text {
+    font-size: 11px
+  }
+}
+
+/* For phone*/
+nav ul {
+  background-color: white;
+  margin: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+  padding: 5px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  border: 5px solid black;
+  padding: 6px;
+}
+
+nav a:active {
+  border: 5px solid black;
+  padding: 6px;
+}
+
+.Main {
+  background-color: rgba(255, 255, 255, 0.6);
+  margin: 10px;
+  padding: 10px;
+  font-size: 12px;
+}
+
+section {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 10px;
+  margin: 10px;
+  font-size: 12px;
+}
+
+footer a {
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  border-radius: 15px;
+  text-decoration: none;
+  padding: 5px 20px 5px 20px;
+  margin: 10px;
+}
+
+/*Tablets*/
+@media screen and (min-width: 750px) {
+  nav ul li {
+    display: inline;
+    padding-right: 20px;
+  }
+
+  nav ul {
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  .Main {
+    height: 250px;
+    font-size: 18px;
+  }
+
+  section {
+    font-size: 18px;
+  }
+
+  footer {
+    margin-top: 26px;
+    margin-bottom: 26px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .Main {
+    float: left;
+    width: 50%;
+    font-size: 20px;
+    height: 750px;
+    margin-top: 100px;
+    margin-left: 150px;
+    margin-bottom: 50px;
+  }
+
+  .Main h1 {
+    font-size: 60px;
+  }
+
+  section {
+    float: right;
+    width: 30%;
+    font-size: 20px;
+    height: 750px;
+    margin-top: 100px;
+    margin-right: 110px;
+  }
+
+  section h1 {
+    font-size: 50px;
+  }
+
+  footer {
+    clear: both;
+    margin: 150px;
+  }
+
+  nav ul li {
+    font-size: 25px;
+    padding-right: 100px;
+  }
+
+  nav ul {
+    padding: 20px;
+    padding-left: 150px;
+  }
+
+  footer a {
+    font-size: 35px;
+    border-radius: 50px;
+  }
+}

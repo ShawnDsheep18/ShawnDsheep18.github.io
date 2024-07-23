@@ -1,0 +1,239 @@
+html {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+}
+
+body {
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    text-align: center;
+    background-color: black;
+    padding: 50px;
+    margin: 0px;
+}
+
+header,
+footer {
+    width: 100%;
+    background-color: black;
+}
+
+header nav {
+    margin-top: 0px;
+    background-color: rgb(146, 47, 38);
+    height: 120px;
+}
+
+header ul,
+footer ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px;
+    padding: 40px;
+}
+
+ul a {
+    text-decoration: none;
+    color: white;
+}
+
+ul li {
+    list-style: none;
+    padding-right: 100px;
+}
+
+#navicon {
+    display: none;
+}
+
+#main {
+    width: 100%;
+}
+
+#main img {
+    width: 100%;
+    height: 1000px;
+}
+
+#main p {
+    text-align: center;
+    margin: 30px 200px 30px 200px;
+}
+
+#one {
+    flex: 1 1 500px;
+    margin: auto;
+    text-align: center;
+}
+
+#two {
+    flex: 1 1 500px;
+    margin: auto;
+    text-align: center;
+}
+
+#one div,
+#two div {
+    border: 5px solid rgb(146, 47, 38);
+    margin: 20px;
+    width: 80%;
+    margin: 50px auto 50px auto;
+}
+
+section div img {
+    height: 550px;
+    width: 100%;
+    margin-top: 0px;
+}
+
+#one div h1,
+#two div h1 {
+    background-color: rgb(146, 47, 38);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: white;
+}
+
+/**/
+#three {
+    flex: 1 1 600px;
+    height: 100%;
+}
+
+#four {
+    flex: 1 1 600px;
+}
+
+input,
+select {
+    display: block;
+    width: 60%;
+    height: 50px;
+    font-size: 20px;
+    margin: 20px auto 20px auto;
+    border-bottom: 5px solid black;
+}
+
+label {
+    margin: 20%;
+}
+
+#three h1 {
+    text-align: center;
+    width: 50%;
+    margin: 20px auto 20px auto;
+    border: 2px solid rgb(146, 47, 38);
+    background-color: rgb(146, 47, 38);
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.submit {
+    width: 20%;
+    margin-left: 20%;
+    background-color: rgb(146, 47, 38);
+    color: white;
+}
+
+#four div {
+    border: 2px solid black;
+    margin: 50px;
+    padding: 20px;
+    box-shadow: 10px 10px;
+}
+
+.social {
+    font-size: 50px;
+    background-color: rgb(146, 47, 38);
+}
+
+.fa-brands {
+    padding: 0px 20px 0px 20px;
+    color: white;
+}
+
+.social h1 {
+    margin: 0px;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-size: 30px;
+}
+
+.social a:hover,
+.fa-brands:hover {
+    font-size: 50px;
+    color: blue;
+}
+
+/**/
+@media screen and (max-width:688px) {
+    header nav {
+        height: 165px;
+    }
+}
+
+@media screen and (max-width:568px) {
+    body {
+        display: block;
+    }
+
+    header ul {
+        flex-direction: column;
+        display: none;
+        padding: 0px 0px 20px 40px;
+    }
+
+    header ul li {
+        padding-right: 0px;
+    }
+
+    a#navicon {
+        display: block;
+    }
+
+    a#navicon:hover +ul,
+    header ul:hover {
+        display: block;
+    }
+
+    header nav {
+        height: auto;
+    }
+
+    #main img {
+        display: none;
+    }
+
+    #main p {
+        text-align: center;
+        margin: 30px 10px 30px 10px;
+    }
+
+    #one,
+    #two {
+        margin: auto;
+        width: 100%;
+    }
+
+    #one div,
+    #two div {
+        width: 90%;
+    }
+
+    #three {
+        width: 100%;
+    }
+}
